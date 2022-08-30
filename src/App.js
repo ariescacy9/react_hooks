@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from "react";
 
 function App() {
-  const [gastos, setGastos] = useState([0])
+  const [gastos, setGastos] = useState([])
 
   return (
     <div className='App'>
@@ -32,8 +32,7 @@ function GastosMes ({gastos}){
 
 return (
   <ul>
-    {gastos.map ((gasto) =>( <li key = {gasto}>{gasto}</li>
-    ))}
+    {gastos.map ((gasto, index) =>( <li key = {index}>{gasto}</li>))}
   </ul>
 );
 }
