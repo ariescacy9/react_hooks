@@ -6,14 +6,13 @@ function App() {
   const [gastos, setGastos] = useState([0])
 
   return (
-    <>
+    <div className='App'>
       <div className='App__gastos'>
         <Contador gastos={gastos}/>
         <GastosMes gastos={gastos}/>
         <AgregarGasto setGastos = {setGastos} />
       </div>
-      
-    </>
+    </div>
   );
 }
 
